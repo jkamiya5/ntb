@@ -20,6 +20,10 @@
         <servlet-name>Sample3_3</servlet-name>
         <servlet-class>chap3.Sample3_3</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Sample3_4</servlet-name>
+        <servlet-class>chap3.Sample3_4</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Sample3_2</servlet-name>
         <url-pattern>/Sample3_2</url-pattern>
@@ -28,9 +32,13 @@
         <servlet-name>Sample3_3</servlet-name>
         <url-pattern>/Sample3_3</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sample3_4</servlet-name>
+        <url-pattern>/Sample3_4</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
-                30
-            </session-timeout>
+            30
+        </session-timeout>
     </session-config>
 </web-app>
