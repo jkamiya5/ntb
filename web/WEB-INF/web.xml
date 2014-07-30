@@ -28,6 +28,10 @@
         <servlet-name>Sample3_5</servlet-name>
         <servlet-class>chap3.Sample3_5</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Sample3_6</servlet-name>
+        <servlet-class>chap3.Sample3_6</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Sample3_2</servlet-name>
         <url-pattern>/Sample3_2</url-pattern>
@@ -44,13 +48,15 @@
         <servlet-name>Sample3_5</servlet-name>
         <url-pattern>/Sample3_5</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sample3_6</servlet-name>
+        <url-pattern>/Sample3_6</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
-            30
-        </session-timeout>
+                30
+            </session-timeout>
     </session-config>
-    
-    
     <servlet>
         <servlet-name>RdTest1</servlet-name>
         <servlet-class>chap3.RdTest1</servlet-class>
@@ -67,7 +73,6 @@
         <servlet-name>RdTest2</servlet-name>
         <url-pattern>/rd2</url-pattern>
     </servlet-mapping>
-
     <servlet>
         <servlet-name>RdTest3</servlet-name>
         <servlet-class>chap3.RdTest3</servlet-class>
