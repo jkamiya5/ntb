@@ -8,8 +8,14 @@
             /WebApplication1/chap3_1
         </param-value>
     </context-param>
-    
-
+    <filter>
+        <filter-name>Sample3_8</filter-name>
+        <filter-class>chap3.Sample3_8Filter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Sample3_8</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <listener>
         <description>ServletContextListener, ServletContextAttributeListener</description>
         <listener-class>chap3.Sample3_7Listener</listener-class>
@@ -42,6 +48,12 @@
         <servlet-name>Sample3_7</servlet-name>
         <servlet-class>chap3.Sample3_7</servlet-class>
     </servlet>
+    
+    <servlet>
+        <servlet-name>Sample3_8</servlet-name>
+        <servlet-class>chap3.Sample3_8</servlet-class>
+    </servlet>
+    
     <servlet-mapping>
         <servlet-name>Sample3_2</servlet-name>
         <url-pattern>/Sample3_2</url-pattern>
@@ -66,6 +78,12 @@
         <servlet-name>Sample3_7</servlet-name>
         <url-pattern>/Sample3_7</url-pattern>
     </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>Sample3_8</servlet-name>
+        <url-pattern>/Sample3_8</url-pattern>
+    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30
