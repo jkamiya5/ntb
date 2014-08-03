@@ -60,6 +60,10 @@
         <servlet-name>Sample4_2</servlet-name>
         <servlet-class>chap4.Sample4_2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Sample4_4</servlet-name>
+        <servlet-class>chap4.Sample4_4</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Sample3_2</servlet-name>
         <url-pattern>/Sample3_2</url-pattern>
@@ -95,6 +99,10 @@
     <servlet-mapping>
         <servlet-name>Sample4_2</servlet-name>
         <url-pattern>/Sample4_2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Sample4_4</servlet-name>
+        <url-pattern>/Sample4_4</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
